@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi_lang_agent"
+version = "0.1.0"
+description = "Multi-language team of AI agents using Gemini"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "agno>=1.0.0",
+    "google-genai>=0.3.0",
+    "python-dotenv>=1.0.0",
+    "colorama>=0.4.6",
+]
+
+[project.scripts]
+multi-lang-chat = "multi_lang_agent.cli:main"
+
+[tool.setuptools]
+packages = ["multi_lang_agent"] 

@@ -1,0 +1,78 @@
+# Multi-Language Agent
+
+A multi-language AI assistant system built with Agno and Gemini 2.0 Flash. This project creates a team of AI agents that can respond in different languages (English, Japanese, German, and Chinese).
+
+## Installation
+
+1. Clone this repository
+2. Install dependencies:
+   ```
+   pip install -e .
+   ```
+3. Create a `.env` file in the project root with your Google API key:
+
+   ```
+   GOOGLE_API_KEY=your_api_key_here
+
+   # Optional: Enable debug mode
+   DEBUG_MODE=false
+   ```
+
+   You can get an API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+
+## Usage
+
+### Interactive Chat CLI
+
+For an interactive chat experience with the multi-language agent:
+
+```bash
+multi-lang-chat
+```
+
+### Single Query Mode
+
+You can also send a single query directly:
+
+```bash
+multi-lang-chat "How are you doing today?"
+```
+
+### Demo Mode
+
+To run a demonstration with examples in different languages:
+
+```bash
+multi-lang-chat --demo
+```
+
+### Debug Mode
+
+To enable debug mode (to see how the system works internally):
+
+```bash
+multi-lang-chat --debug
+```
+
+You can combine options:
+
+```bash
+multi-lang-chat --demo --debug
+```
+
+## Supported Languages
+
+- English
+- Japanese
+- Chinese
+- German
+
+The system will respond in English when asked in unsupported languages.
+
+## Features
+
+- Automatically detects the language of user input
+- Routes queries to the appropriate language agent
+- Responds in the language of the query when supported
+- Graceful handling of unsupported languages
+- Debug mode to understand the routing process
