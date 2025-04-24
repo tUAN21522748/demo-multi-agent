@@ -83,37 +83,11 @@ If you prefer using pip:
 For an interactive chat experience with the multi-language agent:
 
 ```bash
+# With activated environment
 multi-lang-chat
-```
 
-### Single Query Mode
-
-You can also send a single query directly:
-
-```bash
-multi-lang-chat "How are you doing today?"
-```
-
-### Demo Mode
-
-To run a demonstration with examples in different languages:
-
-```bash
-multi-lang-chat --demo
-```
-
-### Debug Mode
-
-To enable debug mode (to see how the system works internally):
-
-```bash
-multi-lang-chat --debug
-```
-
-You can combine options:
-
-```bash
-multi-lang-chat --demo --debug
+# Or directly with UV (no activation needed)
+uv run multi_lang_agent/cli.py
 ```
 
 ## Supported Languages
