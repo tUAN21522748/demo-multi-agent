@@ -1,2 +1,0 @@
-[console_scripts]
-multi-lang-chat = multi_lang_agent.cli:main
