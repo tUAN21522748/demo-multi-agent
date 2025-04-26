@@ -46,42 +46,6 @@ A multi-language AI assistant system built with Agno and Gemini 2.0 Flash. This 
 
    You can get an API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
 
-### Alternative Installation (Pip)
-
-If you prefer using pip:
-
-1. Clone this repository
-2. Create and activate a virtual environment:
-
-   ```bash
-   python -m venv .venv
-
-   # On Windows
-   .venv\Scripts\activate
-
-   # On macOS/Linux
-   source .venv/bin/activate
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -e .
-   ```
-
-## Usage
-
-### Interactive Chat CLI
-
-For an interactive chat experience with the multi-language agent:
-
-```bash
-# With activated environment
-multi-lang-chat
-
-# Or directly with UV (no activation needed)
-uv run multi_lang_agent/cli.py
-```
-
 ## Supported Languages
 
 - English
