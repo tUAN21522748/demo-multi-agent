@@ -35,7 +35,7 @@ A multi-language AI assistant system built with Agno and Gemini 2.0 Flash. This 
    uv sync
    ```
 
-6. Create a `.env` file in the project root with your Google API key:
+5. Create a `.env` file in the project root with your Google API key:
 
    ```
    GOOGLE_API_KEY=your_api_key_here
@@ -45,6 +45,11 @@ A multi-language AI assistant system built with Agno and Gemini 2.0 Flash. This 
    ```
 
    You can get an API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+
+   ```bash
+   cd multi_lang_agent
+   uv run cli.py
+   ```
 
 ## Supported Languages
 
