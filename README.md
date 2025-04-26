@@ -4,6 +4,8 @@ A multi-language AI assistant system built with Agno and Gemini 2.0 Flash. This 
 
 ## Installation
 
+### Download pythod
+
 ### Using UV (Recommended)
 
 [UV](https://github.com/astral-sh/uv) is a fast Python package installer and resolver. To install and set up the project with UV:
@@ -27,20 +29,10 @@ A multi-language AI assistant system built with Agno and Gemini 2.0 Flash. This 
    uv venv
    ```
 
-4. Activate the virtual environment:
+4. Activate the virtual environment and install packages:
 
    ```bash
-   # On Windows
-   .venv\Scripts\activate
-
-   # On macOS/Linux
-   source .venv/bin/activate
-   ```
-
-5. Install the package and dependencies:
-
-   ```bash
-   uv pip install -e .
+   uv sync
    ```
 
 6. Create a `.env` file in the project root with your Google API key:
